@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>first_Grover</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./assets/css/mystyle.css" rel="stylesheet" />
+    <script src="./assets/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // $("#hide").click(function () {
+        //   $("p").hide();
+        // });
+        $(".menu1").click(function () {
+          $(".menu").toggle();
+          // $(".menu1").hide();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="Header">
+      <div class="header">
+        <div class="nav">
+          <div class="logo" style="padding: 20px;">
+            <img src="./assets/images/logo.svg" alt="logo" />
+          </div>
+          <div class="navbar">
+            <ul>
+              <li><a class="active" href="#home">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#service">Service</a></li>
+              <li><a href="#shop">Shop</a></li>
+            </ul>
+          </div>
+          
+          <div class="search" style="padding: 10px; ">
+            <input type="text" name="search" placeholder="Search.." />
+            <img
+              src="./assets/images/pocket.svg"
+              alt="pocket"
+              width="24px"
+              height="24px"
+            />
+          </div>
+          <span class="sideMenuButton" onclick="openNavar()" id="openNavar"
+            >Open</span
+          >
+        </div>
+        <div class="navbar1   ">
+            <ul>
+              <li><a class="active" href="#home">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#service">Service</a></li>
+              <li><a href="#shop">Shop</a></li>
+            </ul>
+          </div>
+
+        <div class="sideNavigationBar" id="sideNavigationBar">
+          <a href="#" class="closeButton" onclick="closeNavbar()"> Close </a>
+          <a href="#">Home</a>
+          <a href="#">Menu</a>
+          <a href="#">Service</a>
+          <a href="#">Shop</a>
+          
+        </div>
+
+        <!-- Content -->
+        <div class="firstLine">
+          <div class="leftside">
+            <div>
+              <span>More than Faster</span>
+              <img
+                src="./assets/images/strawberry.svg"
+                alt="strawberry"
+                width="26px"
+                height="24px"
+              />
+            </div>
+            <p class="groceries">
+              Groceries delivered in as little
+              <span style="color: #f54748">2 hours</span>
+            </p>
+            <p id="details">
+              Grocen atssures fresh grocery every morning to your family without
+              getting out in this pandemic.
+            </p>
+            <div class="orderButton" style="display: flex;  justify-content: center;align-items:center; gap: 10px">
+              <img
+                src="./assets/images/button-Order Now.svg"
+                alt="button-Order Now"
+                width="186px"
+                height="70px"
+              />
+              <!-- <img
+                src="./assets/images/button-play.svg"
+                alt="button-play"
+                width="100px"
+                height="80px"
+              /> -->
+              <span style="width: 186px;
+              margin: 10px;
+              text-align: center;
+              line-height: 75px;
+              font-size: 25px;">Order Process</span>
+            </div>
+
+            <!-- <p style="font-size: 20px;">Order Process</p> -->
+          </div>
+
+          <div class="rightside">
+            <img
+              class="right-side-img"
+              src="./assets/images/Header Image.png"
+              alt="Header Image"
+            />
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <!-- Our Services -->
+      <div class="services" style="background-color: #fef5f5; ">
+        <p style="color: #f54748; font-size: 18px; font-weight: 500">
+          What we Serve
+        </p>
+        <p class="serviceTitle"
+          style="
+            color: #2e2e2e;
+            font-size: 80px;
+            font-weight: 700;
+            line-height: 74px;
+            margin-top: 20px;
+          "
+        >
+          Fruit And Vegetable Delivered <br />To Your Home
+        </p>
+
+        
+        <div class="ourServices">
+          <div>
+            <img src="./assets/images/free.svg" alt="free" />
+            <p style="font-size: 30px">Free Shipping</p>
+            <p>Enjoy Order in a hand using the <br />fresness of groceries</p>
+          </div>
+          <div
+            style="
+              margin: 30px 0;
+              border-radius: 10px;
+              transform: rotate(5deg);
+              box-shadow: 5px 5px #fe6a6a;
+            "
+          >
+            <img src="./assets/images/hand.svg" alt="hand" />
+            <p style="font-size: 30px">15 Days Returns</p>
+            <p>
+              Order in a handy way using the <br />freshness of the groceries.
+            </p>
+          </div>
+          <div>
+            <img src="./assets/images/key.svg" alt="key" />
+            <p style="font-size: 30px">Secure checkout</p>
+            <p>If you get rotten items - return <br />immediately to us.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features01 -->
+      <div class="Features01">
+        <img src="./assets/images/image and card.png" alt="key" />
+        <div>
+          <p style="font-size: 18px; color: #03a66b">WHY CHOOSE US</p>
+          <p class="Feature01Title"
+            style="
+              font-size: 40px;
+              color: #2e2e2e;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 54px;
+            "
+          >
+            Find Favorites And Discover New Ones
+          </p>
+          <p style="font-size: 20px; color: #676767">
+            At vero eos et accusamus et iusto odio dignissimos ducimus
+            blanditiis praesen voluptatum deleniti.
+          </p>
+          <button
+            style="
+              margin-top: 50px;
+              width: 200px;
+              border: none;
+              font-size: 20px;
+              height: 70px;
+              background-color: #f86061;
+              border-radius: 10px;
+              color: white;
+            "
+          >
+            Explore Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Features02 -->
+      <div class="Features02">
+        <div>
+          <p style="font-size: 18px; color: #f9ba45">HOME DELIVERY</p>
+          <p class="Feature02Title"
+            style="
+              font-size: 40px;
+              color: #2e2e2e;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 54px;
+            "
+          >
+            Sit at Home We Will Take Care Your Order
+          </p>
+          <p style="font-size: 20px; color: #676767;">
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque corrupti quos
+          </p>
+          <button
+            style="
+              margin-top: 50px;
+              width: 200px;
+              height: 70px;
+              font-size: 20px;
+              color: #f86061;
+              border-color: #dd3737;
+              border-radius: 10px;
+            "
+          >
+            Explore Now
+          </button>
+        </div>
+
+        <img src="./assets/images/features02.png" alt="key" />
+      </div>
+
+      <!-- mobileMockup -->
+      <div class="mobileMockup">
+        <img
+          src="./assets/images/mobile mockup.png"
+          alt="key"
+          style="margin: 20px"
+        />
+        <div>
+          <p style="font-size: 18px; color: #f54748">Download our app</p>
+          <p class="mobileTitle" style="font-size: 40px; color: #2e2e2e">
+            Get the Groceries app order more easily.
+          </p>
+          <p style="font-size: 18px; color: #676767">
+            At vero eos et accusamus et iusto odio dignissimos ducimus
+            blanditiis praesen voluptatum deleniti.
+          </p>
+          <div class="mobileFlex" style="display: flex; justify-content: space-around">
+            <button
+              style="
+                margin-top: 30px;
+                padding: 10px;
+                width: 200px;
+                height: 70px;
+                font-size: 20px;
+                color: #2e2e2e;
+                border: 1.5px solid #eedcdc;
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <img src="./assets/images/applebutton.svg" alt="key" />
+              App Store
+            </button>
+            <button
+              style="
+                margin-top: 30px;
+                width: 200px;
+                padding: 10px;
+                height: 70px;
+                font-size: 20px;
+                color: #2e2e2e;
+                border: 1.5px solid #eedcdc;
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <img src="./assets/images/playbutton.svg" alt="key" />
+              Play Store
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div>
+          <img src="./assets/images/logo.svg" alt="noImg" />
+          <p style="font-size: 18px; color: #676767">
+            Fast delivery, which is active all over the world, serves with many transportation vehicles.
+          </p>
+        </div>
+
+        <div>
+          <p style="font-size: 25px; color: #2e2e2e; font-weight: 700">
+            Company
+          </p>
+          <p style="font-size: 18px; color: #676767">About Us</p>
+          <p style="font-size: 18px; color: #676767">Blog</p>
+          <p style="font-size: 18px; color: #676767">All Products</p>
+          <p style="font-size: 18px; color: #676767">Locations Map</p>
+        </div>
+        <div>
+          <p style="font-size: 25px; color: #2e2e2e; font-weight: 700">
+            Services
+          </p>
+          <p style="font-size: 18px; color: #676767">Order tracking</p>
+          <p style="font-size: 18px; color: #676767">Wish List</p>
+          <p style="font-size: 18px; color: #676767">My account</p>
+          <p style="font-size: 18px; color: #676767">Terms & Conditions</p>
+        </div>
+        <div>
+          <p style="font-size: 25px; color: #2e2e2e; font-weight: 700">
+            Get in Touch
+          </p>
+          <p style="font-size: 18px; color: #676767">
+            Subscribe to our weekly <br />Newsletter and receive <br />updates
+            via email.
+          </p>
+        </div>
+      </div>
+      <div class="copyright" style="display: flex; align-items:center; justify-content: space-between">
+        <div>
+          <p style="font-size: 18px; color: #676767; ">
+            All Rights Reserved @ BESNIK 2021
+          </p>
+        </div>
+        <div style="display: flex; align-items: center; gap: 100px;">
+          <p style="font-size: 18px; color: #676767; ">Terms & Conditions</p>
+          <p style="font-size: 18px; color: #676767; ">Privacy & Policy</p>
+        </div> 
+      </div>
+    </div>
+  </body>
+</html>
